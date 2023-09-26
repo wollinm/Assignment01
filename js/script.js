@@ -6,8 +6,8 @@ Date: 09/25/2023
 Assignment 01
 */
 // Variables
-let myName = 'this is my name'
-let myClass = "here"
+let myName = 'Magdalena Wollin';
+let myCourse = 'JavaScript';
 //Exercise 1
 //1. Convert the following highlighted identifiers to Camel Case notation:
 //   let some_month
@@ -107,25 +107,33 @@ let x = typeof myVar
 */
 
 //11. Within an alert box, use the concatenation operator (+) to display text in the alert box that appears as follows:
-
 //    Hello Zak Ruvalcaba, welcome to the JavaScript class!
-
 //    Substitute my name for your name. Although not necessary in practice, I want you to use 2 concatenation operators to construct this string of text. 
 //    One after the text “Hello” and a second one after your name and before the comma.
-
-//<!--<body onload="javascript:alert(['Hello', ' ', 'Magdalena Wollin'].join('') + ', welcome to the JavaScript class!')" > -->
-
+/*
+  <body onload="javascript:alert(['Hello', ' ', '1Magdalena Wollin'].join('') + ', welcome to the JavaScript class!')" >
+*/
 
 //12. Declare a variable called name and set it equal to your name.
 //    Substitute your name in the previous alert string with the variable instead.
+/*
+  <body onload="javascript:alert(['Hello', ' ', myName].join('') + ', welcome to the JavaScript class!')" >
+*/
+
 //13. Declare a variable called course and set it equal to “JavaScript”.
 //    Rework your alert string so that it displays the string of text but using the variables as opposed to hard coded text.
+/*
+   <body onload="javascript:alert('Hello ' + myName +'\nWelcome to the '+ myCourse + 'class!')" >
+*/
+
 //14. Rework the above string so that a line break is added right before the word “Welcome”. Your alert box should display as follows:
 //
 //    Hello Zak Ruvalcaba.
 //    Welcome to the JavaScript class!
 //
-//  <body onload="javascript:alert('Hello Magdalena Wollin\n'+'Welcome to the JavaScript class!')" >
+/*
+    <body onload="javascript:alert('Hello ' + myName + '.\nWelcome to the '+ myCourse + 'class!')" >
+*/
 
 //15.Replace the hardcoded string of your name with a prompt that asks the user for their name. The prompt’s response will now be captured in the name variable.
 //16.Replace the hardcoded string of the class you are taking with a prompt that asks the user for the class they are taking. The prompt’s response will now be captured in the course variable.
