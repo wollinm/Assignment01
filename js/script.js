@@ -2,12 +2,14 @@
 document.write(`<h1>Start Assignment 01</h1>`);
 /* JavaScript
 Author: Magdalena Wollin
-Date: 09/25/2023
+Date: 09/26/2023
 Assignment 01
 */
 // Variables
-let myName = 'Magdalena Wollin';
-let myCourse = 'JavaScript';
+//let myName = 'Magdalena Wollin';
+//let myCourse = 'JavaScript';
+let myName = prompt("What is your name?");
+let myCourse = prompt("What class are you taking?");
 //Exercise 1
 //1. Convert the following highlighted identifiers to Camel Case notation:
 //   let some_month
@@ -32,6 +34,10 @@ document.write(`The bLiteral is ${bLiteral}<br/>`);
 document.write(`The nullLiteral is ${nullLiteral}<br/>`);
 
 //3. Give me two examples of complex / variable expressions.
+let mysquare = function(num) { return num*num };
+//console.log(mysquare(5));
+var fullName = { firstName: 'Magdalena', lastName: 'Wollin'};
+//console.log(fullName.lastName);
 
 //4. Declare (but do not assign) 9 variables for the following identifiers: 
 //   First Name, Last Name, Address, City, State, Zip Code, Your Age, Referral Source, May We Contact You. 
@@ -136,19 +142,45 @@ let x = typeof myVar
 */
 
 //15.Replace the hardcoded string of your name with a prompt that asks the user for their name. The prompt’s response will now be captured in the name variable.
+// top of page : let myName = prompt("What is your name?");
+
 //16.Replace the hardcoded string of the class you are taking with a prompt that asks the user for the class they are taking. The prompt’s response will now be captured in the course variable.
+// top of page :  let myCourse = prompt("What class are you taking?");
+
 //17.Declare a variable called x and assign it a value of 10.
 //   Declare a variable called y and assign it a value of 20.
 //   Display the sum of those two numbers in the console window.
+let x = 10;
+let y = 20;
+console.log(x+y);
+
 //18. Declare a variable called x and assign it a value of 20.
 //   Add and assign 20 to that variable and display the result in the console window.
 //   The result should be 40.
+x = 20;
+x += 20;
+console.log(x);
+
 //19. Declare a variable called x and assign it a value of 20.
 //   Multiply and assign 5 to that variable and display the result in the console window.
 //   The result should be 100.
+x = 20;
+x *= 5;
+console.log(x);
+
 //20. Declare a variable called x and assign it a value that equals the remainder of 20 divided by 3.
 //    Divide and assign 1 to that variable and display the result in the console window.
 //    The result should be 2. If you got 6.66 try again.
+x = 20%3;
+console.log(x);
+
 //21. Using a set of Comparison and Logical operators, write an application that evaluates to true and displays the result within the console window.
-//22. Using a set of Comparison and Logical operators, write an application that evaluates to false and displays the result within the console window. The application cannot use the same 
-//    operators used in the previous application.
+x = 5;
+y = 10;
+console.log(x < y && y > 6);
+
+//22. Using a set of Comparison and Logical operators, write an application that evaluates to false and displays the result within the console window. 
+//    The application cannot use the same operators used in the previous application.
+x = 5;
+y = 10;
+console.log(x == y || y > 10);
